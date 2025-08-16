@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#area {
+  font: normal 20 px Arial;
+  background: red;
+  color: white;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  column-gap: 2px;
+  gap: 2px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+
+}
+
+button.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
